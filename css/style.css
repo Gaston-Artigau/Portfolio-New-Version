@@ -328,6 +328,10 @@ header {
     font-family: "Font Awesome Kit";
     content: "\25CF";
 }
+.first-section__img {
+    width: 240px;
+    height: 290px;
+}
 
 @media (min-width: 768px) {
     .first-section {
