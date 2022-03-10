@@ -361,9 +361,13 @@ body::-webkit-scrollbar-thumb {
     font-size: 2.8rem;
     margin-bottom: 6rem;
 }
+.first-section__link {
+    color: white;
+    padding-left: 2rem;
+}
 .first-section__link::before {
     font-family: "Font Awesome Kit";
-    content: "\25CF";
+    /* content: "\25CF"; */
 }
 .first-section__img {
     width: 240px;
