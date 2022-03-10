@@ -31,6 +31,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
     <link rel="manifest" href="/assets/site.webmanifest">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
+    type="text/javascript" charset="utf-8"></script>
 </head>
 
 <body class='body'>
@@ -51,7 +54,7 @@
             </ul>
 
             <ul class="nav">
-                <li><a target="_blank" class="link-menu button-menu" href='/assets/CV. Hector Gaston Artigau.pdf' title="Resume PDF">Resume</a></li>
+                <li><a target="_blank" class="link-menu button-menu" href='/assets/CV. Hector Gaston Artigau.pdf' title="CV PDF">CV </a></li>
             </ul>
         </nav>
     </header>
@@ -242,6 +245,31 @@
     <footer class="footer">
         <a target="_blank" href="https://github.com/Gaston-Artigau" class="footer">Made by Gastón Artigau</a>
     </footer>
+
+    <script>
+        $(function(){
+
+            $('a[href*=#]').click(function() {
+
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+                    && location.hostname == this.hostname) {
+
+                        var $target = $(this.hash);
+
+                        $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+                        if ($target.length) {
+
+                            var targetOffset = $target.offset().top;
+
+                            $('html,body').animate({scrollTop: targetOffset}, 2000);
+
+                            return false;
+                        }
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
