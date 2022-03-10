@@ -257,6 +257,7 @@ body::-webkit-scrollbar-thumb {
     min-height: 20rem;
     padding: 0px;
     margin-bottom: 10rem;
+    margin-top: 5rem;
     color: var(--slate);
     font-size: 1.8rem;
     margin-left: 1rem;
@@ -362,7 +363,7 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 6rem;
 }
 .first-section__link {
-    color: white;
+    color: #64ffda;
     padding-left: 2rem;
 }
 .first-section__link::before {
@@ -372,6 +373,10 @@ body::-webkit-scrollbar-thumb {
 .first-section__img {
     width: 240px;
     height: 290px;
+}
+.first-section__skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
 }
 
 @media (min-width: 768px) {
@@ -399,12 +404,24 @@ body::-webkit-scrollbar-thumb {
     }
     .first-section__link::before {
         font-family: "Font Awesome Kit";
-        content: "\25CF";
+        /* content: "\25CF"; */
+    }
+    .first-section__skills {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr)
+    }
+    img {
+        margin-top: 10rem;
+        width: 265px;
+        height: 290px;
+        border-radius: 5px;
     }
 }
 
 
 img {
+    display: flex;
+    margin: 0 auto;
     margin-top: 10rem;
     width: 265px;
     height: 290px;
