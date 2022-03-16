@@ -633,6 +633,24 @@ img {
 .third-section__link .third-section__link--p1 .third-section__link--p2{
     margin-left: 1rem;
 }
+.button-projects {
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #64ffda;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color:#0a192f;
+    margin-top: 60px;
+}
+.button-projects:hover {
+    background-color: #233554;
+}
+.button-projects a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #64ffda;
+}
 
 @media (min-width: 768px) {
     .li {
@@ -684,6 +702,12 @@ img {
     }
     .third-section__link .third-section__link--p1 .third-section__link--p2{
         margin-left: 2rem;
+    }
+    .button-projects {
+        margin-top: 100px;
+    }
+    .button-projects a {
+        font-size: 22px;
     }
 }
 
