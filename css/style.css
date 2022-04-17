@@ -126,14 +126,14 @@ body::-webkit-scrollbar-thumb {
 /* Navbar */
 
 .header {
-    background-color: var(--navy);
+    background-color: #041022;
     height: 8rem;
     display: flex;
     justify-content: end;
     width: 100%;
     padding-bottom: 2rem;
     padding-top: 2rem;
-    box-shadow: 5px 5px 30px rgb(0, 0, 0);
+    box-shadow: 2px 2px 20px rgb(7, 7, 7);
 }
 
 .navegacion-principal {
@@ -150,7 +150,7 @@ body::-webkit-scrollbar-thumb {
 .link-menu {
     text-decoration: none;
     color: var(--lightest-slate);
-    font-size: 1.6rem;
+    font-size: 1.65rem;
 }
 .link-menu:hover {
     color: var(--green);
