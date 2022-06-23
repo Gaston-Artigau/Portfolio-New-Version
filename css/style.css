@@ -162,7 +162,7 @@ body::-webkit-scrollbar-thumb {
     padding: .7rem 2rem;
     margin-top: 2.5rem;
     font-size: 1.6rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-weight: 500;
     border-radius: .5rem;
     border: 1px solid var(--green);
@@ -201,13 +201,13 @@ body::-webkit-scrollbar-thumb {
         align-items: center;
         position: fixed;
         width: 100%;
-        height: 100vh;
+        height: 15vh;
         top: 65px;
-        background: var(--lightest-navy);
+        background: #08214d;
         z-index: 10;
         left: -100%;
         text-align: center;
-        transition: all .8s;
+        transition: all .7s;
         flex-direction: column;
     }
     .button-menu {
@@ -230,6 +230,9 @@ body::-webkit-scrollbar-thumb {
         font-size: 2.7rem;
         color: rgb(173, 173, 173)
     }
+    .link-menu:hover {
+        filter: drop-shadow(0 0 5px #58e6c5) drop-shadow(0 0 10px #48b198) drop-shadow(0 0 25px #50caae);
+    }
     nav ul li {
         display: block;
         margin: 20px 0 0 0;
@@ -243,6 +246,12 @@ body::-webkit-scrollbar-thumb {
 
     #check:checked ~ ul {
         left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        height: 7.6rem;
     }
 }
 
@@ -356,7 +365,7 @@ body::-webkit-scrollbar-thumb {
 .first-section {
     color: var(--slate);
     font-size: 1.8rem;
-    margin: 0 0 12rem 1rem;
+    margin: 0 0 7rem 1rem;
 }
 .first-section__onegrid {
     margin-right: 5rem;
@@ -375,12 +384,19 @@ body::-webkit-scrollbar-thumb {
     /* content: "\25CF"; */
 }
 .first-section__img {
-    width: 240px;
-    height: 290px;
+    width: 270px;
+    height: 270px;
 }
 .first-section__skills {
     display: grid;
     grid-template-columns: repeat(2, 1fr)
+}
+
+@media (max-width: 290px) {
+    .first-section__img {
+        width: 235px;
+        height: 235px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -407,8 +423,10 @@ body::-webkit-scrollbar-thumb {
         /* content: "\25CF"; */
     }
     .first-section__img {
-        width: 240px;
-        height: 290px;
+        width: 280px;
+        height: 280px;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
     }
     .first-section__skills {
         display: grid;
@@ -447,9 +465,9 @@ body::-webkit-scrollbar-thumb {
         display: grid;
         grid-template-columns: repeat(2, 1fr)
     }
-    img {
-        margin-top: 10rem;
-        width: 265px;
+    img, .first-section__img {
+        margin-top: 12rem;
+        width: 290px;
         height: 290px;
         border-radius: 5px;
     }
@@ -459,7 +477,7 @@ body::-webkit-scrollbar-thumb {
 img {
     display: flex;
     margin: 0 auto;
-    margin-top: 10rem;
+    margin-top: 7rem;
     width: 265px;
     height: 290px;
     border-radius: 5px;
@@ -589,6 +607,18 @@ img {
 .third-section__img {
     width: 53%;
     height: 35rem;
+}
+@media (max-width: 1000px) {
+    .third-section__img {
+        width: 60%;
+        height: 33rem;
+    }
+}
+@media (max-width: 880px) {
+    .third-section__img {
+        width: 60%;
+        height: 30rem;
+    }
 }
 @media (max-width: 768px) {
     .third-section__img {
@@ -778,13 +808,13 @@ img {
         float: left;
         font-size: 1.5rem;
         font-weight: normal;
-        margin: -8rem 0 0 0;
+        margin: -12rem 0 0 0;
     }
     .third-section__title--p1 {
         color: var(--lightest-slate);
         float: left;
         font-size: 2.7rem;
-        margin: -6rem 0 0 0;
+        margin: -9.5rem 0 0 0;
     }
     .third-section__title--p1:hover {
         color: var(--green);
@@ -935,6 +965,7 @@ img {
 .fourth-section__mail:hover {
     background-color: var(--lightest-navy);
 }
+
 @media (min-width: 768px) {
     .fourth-section {
         text-align: center;
@@ -949,7 +980,7 @@ img {
     }
     .fourth-section__description {
         font-size: 1.8rem;
-        padding: 0 33rem;
+        padding: 0 25rem;
         margin-bottom: 8rem;
     }
     .fourth-section__mail {
@@ -962,6 +993,13 @@ img {
         border-radius: .5rem;
         width: auto;
         border: 1px solid var(--green);
+    }
+}
+@media (min-width: 950px) {
+    .fourth-section__description {
+        font-size: 1.8rem;
+        padding: 0 33rem;
+        margin-bottom: 8rem;
     }
 }
 
