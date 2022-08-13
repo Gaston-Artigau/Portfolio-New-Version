@@ -46,6 +46,10 @@ body::-webkit-scrollbar-thumb {
 
 /* Start */
 
+.icon {
+    transition: all .4s;
+}
+
 .icon:hover {
     stroke: #64ffda;
 }
@@ -72,6 +76,7 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
     color: var(--lightest-slate);
     z-index: 1;
+    transition: all .4s;
 }
 .mail:hover {
     color: var(--green);
@@ -151,6 +156,7 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
     color: var(--lightest-slate);
     font-size: 1.65rem;
+    transition: all .4s;
 }
 .link-menu:hover {
     color: var(--green);
@@ -162,10 +168,10 @@ body::-webkit-scrollbar-thumb {
     padding: .7rem 2rem;
     margin-top: 2.5rem;
     font-size: 1.6rem;
-    /* text-transform: uppercase; */
     font-weight: 500;
     border-radius: .5rem;
     border: 1px solid var(--green);
+    transition: all .4;
 }
 .button-menu:hover {
     background-color: var(--lightest-navy);
@@ -283,6 +289,7 @@ body::-webkit-scrollbar-thumb {
     width: 85%;
     border: 1px solid var(--green);
     text-align: center;
+    transition: all .4s;
 }
 .enter__button:hover {
     background-color: var(--lightest-navy);
@@ -509,6 +516,7 @@ img {
 .second-section__span {
     color: var(--white);
     font-size: 1.6rem;
+    transition: all .4s;
 }
 .second-section__span:hover {
     color: var(--green);
@@ -635,8 +643,9 @@ img {
 .third-section__title--project {
     color: var(--lightest-slate);
     float: right;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     margin: -6rem 0 0 0;
+    transition: all .4s;
 }
 .third-section__title--project:hover {
     color: var(--green);
@@ -654,7 +663,7 @@ img {
     gap: 4rem;
     color: var(--slate);
     margin-top: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     float: right;
 }
 .third-section__links {
@@ -674,6 +683,7 @@ img {
     cursor: pointer;
     background-color:#0a192f;
     margin-top: 60px;
+    transition: all .4s;
 }
 .button-projects:hover {
     background-color: #233554;
@@ -760,8 +770,9 @@ img {
 .third-section__title--p1 {
     color: var(--lightest-slate);
     float: left;
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     margin: -6rem 0 0 0;
+    transition: all .4s;
 }
 .third-section__title--p1:hover {
     color: var(--green);
@@ -864,8 +875,9 @@ img {
 .third-section__title--p2 {
     color: var(--lightest-slate);
     float: right;
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     margin: -6rem 0 0 0;
+    transition: all .4s;
 }
 .third-section__title--p2:hover {
     color: var(--green);
@@ -905,7 +917,7 @@ img {
     .third-section__title--p2 {
         color: var(--lightest-slate);
         float: right;
-        font-size: 2.7rem;
+        font-size: 2.5rem;
         margin: -6rem 0 0 0;
     }
     .third-section__title--p2:hover {
@@ -960,6 +972,7 @@ img {
     border-radius: .5rem;
     width: auto;
     border: 1px solid var(--green);
+    transition: all .4s;
 }
 .fourth-section__mail:hover {
     background-color: var(--lightest-navy);
@@ -1009,6 +1022,7 @@ img {
     font-size: 1.7rem;
     padding-bottom: 1.5rem;
     text-decoration: none;
+    transition: all .4s;
 }
 .footer:hover {
     color: var(--green);
